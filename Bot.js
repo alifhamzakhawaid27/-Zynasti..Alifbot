@@ -49,12 +49,10 @@ function reply(message) {
     return `🎬 Search video: https://www.youtube.com/results?search_query=${encodeURIComponent(video)}`;
   }
 if (command === "!kiss") {
-  return `💋 Anime Kiss Videos: https://www.youtube.com/results?search_query=${encodeURIComponent("Anime Kiss Scene")}`;
-}
-
-return "Unknown command! Type !help";
-
-console.log(reply("!help"));
+    return `💋 Anime Kiss Videos: https://www.youtube.com/results?search_query=${encodeURIComponent("Anime Kiss Scene")}`;
   }
+
+  return "Unknown command! Type !help";
+}
 
 console.log(reply("!help"));
