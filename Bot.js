@@ -48,8 +48,10 @@ function reply(message) {
     const video = text.slice(7).trim();
     return `🎬 Search video: https://www.youtube.com/results?search_query=${encodeURIComponent(video)}`;
   }
-
-  return "Unknown command! Type !help";
+if (command === "!kiss") {
+  return `💋 Anime Kiss Videos: https://www.youtube.com/results?search_query=${encodeURIComponent("Anime Kiss Scene")}`;
 }
+
+return "Unknown command! Type !help";
 
 console.log(reply("!help"));
