@@ -55,3 +55,6 @@ if (command === "!kiss") {
 return "Unknown command! Type !help";
 
 console.log(reply("!help"));
+  }
+
+console.log(reply("!help"));
